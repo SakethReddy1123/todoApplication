@@ -1,7 +1,5 @@
-function FromInput({...prpos}){
-    return (
-        <input {...prpos}/>
-    )
+function FormInput({ ...prpos }) {
+  return <input {...prpos} />;
 }
 
-return FromInput
+return FromInput;
