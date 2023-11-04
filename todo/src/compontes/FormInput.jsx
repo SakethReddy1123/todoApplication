@@ -1,4 +1,4 @@
-function FromInput({...prpos}){
+function FormInput({...prpos}){
     return (
         <input {...prpos}/>
     )
