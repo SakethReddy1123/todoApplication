@@ -2,4 +2,4 @@ function FromInput({ ...prpos }) {
   return <input {...prpos} />;
 }
 
-return FromInput;
+export default FromInput;
