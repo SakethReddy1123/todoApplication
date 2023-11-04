@@ -72,10 +72,10 @@ function LoginFrom({setIsLogin}){
         <label htmlFor="email">Email</label>
         
         <FormInput type = 'email' onChange = {emailChangeHandler} id='email' value={emailState.value}/>
-        {!emailState.isvalid && <p>Please Enter a Vaild Email</p>}
+        
         <label htmlFor="password">Password</label>
         <FormInput type = 'password' onChange ={passwordChangeHandler} id = 'password' value = {passwordState.value}/>
-        {!passwordState.isvalid && <p>Please Enter a Vaild password</p>}
+        
         <button disabled = {!formValid}>Login</button>
       </form>
     )
