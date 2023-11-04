@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import LoginFrom from './compontes/Login';
+import LoginFrom from './components/Login';
 import { useState } from 'react';
 
 function App() {
