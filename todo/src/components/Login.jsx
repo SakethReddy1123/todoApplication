@@ -17,8 +17,10 @@ function emailReducer(state,action){
 function passwordReducer(state ,action){
     if(action.type === 'USER_INPUT'){
         return {
-            value : action.val , isvalid : action.val.trim().length > 1 && action.val.trim().length < 15
-        }
+          value: action.val,
+          isvalid:
+            action.val.trim().length > 6 && action.val.trim().length < 15,
+        };
     }
     return {
         ...state
