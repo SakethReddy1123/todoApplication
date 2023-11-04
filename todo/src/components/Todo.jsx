@@ -1,5 +1,6 @@
 import FormInput from "./FormInput";
 import { useState } from "react";
+import App from "../App.css";
 function Todo() {
   const [state, setState] = useState("");
   const [userList, setUserList] = useState([]);
@@ -8,7 +9,7 @@ function Todo() {
     setUserList((prev) => [...prev, { user: state, id: Math.random }]);
 
   return (
-    <div>
+    <div className="container">
       <FormInput type="text" onChange={onChangeTodo}></FormInput>
       <button onClick={onAddItem}>Add</button>
       <ul>
