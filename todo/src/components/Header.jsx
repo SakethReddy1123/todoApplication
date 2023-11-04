@@ -1,7 +1,11 @@
-function Header() {
+function Header({setIsLogin}) {
+
+  function logOutHandler(){
+    setIsLogin(false)
+  }
   return (
     <div>
-      <button>Logout</button>
+      <button onClick={logOutHandler}>Logout</button>
     </div>
   );
 }

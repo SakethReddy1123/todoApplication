@@ -25,7 +25,7 @@ function passwordReducer(state ,action){
     }
 }
 
-function LoginFrom(){
+function LoginFrom({setIsLogin}){
     const[formValid,setFormValid] = useState(false)
    
     const [emailState , dispatchEmail] = useReducer(emailReducer,{
@@ -60,6 +60,7 @@ function LoginFrom(){
 
     function sumbitHandler(event){
         event.preventDefault()
+        setIsLogin(true)
        
         
 
