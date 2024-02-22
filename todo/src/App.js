@@ -6,12 +6,13 @@ import Todo from './components/Todo';
 
 function App() {
  const[islogin,setIsLogin] =  useState(false)
-  return(
+  return (
     <Fragment>
-      {!islogin && <LoginFrom setIsLogin = {setIsLogin}/>}
-      {islogin && <Todo setIsLogin = {setIsLogin}/>}
+      <h1>Hello</h1>
+      {!islogin && <LoginFrom setIsLogin={setIsLogin} />}
+      {islogin && <Todo setIsLogin={setIsLogin} />}
     </Fragment>
-  )
+  );
   
 }
 
